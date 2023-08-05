@@ -20,11 +20,11 @@ body {
 }
 @font-face {
   font-family: b;
-  src: url(./fonts/KFOlCnqEu92Fr1MmEU9fBBc4\\(1\).ttf);
+  src: url(./fonts/KFOlCnqEu92Fr1MmEU9fBBc4\ \(1\).ttf);
 }
 @font-face {
   font-family: c;
-  src: url(./fonts/KFOmCnqEu92Fr1Mu4mxK\\(1\).ttf);
+  src: url(./fonts/KFOmCnqEu92Fr1Mu4mxK\ \(1\).ttf);
 }
 #page1 {
   height: 100vh;
@@ -388,6 +388,30 @@ body {
 }
 .page12-inner > p {
   font-size: 1.3vw;
+}
+.logos {
+  position: absolute;
+  bottom: 15%;
+  overflow: hidden;
+  padding: 60px 0;
+  white-space: nowrap;
+}
+.logo-slider{
+  display: inline-block;
+  animation: 25s slide infinite linear;
+}
+.logo-slider>img{
+  max-height: 80px;
+  margin: 0 40px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-100%);
+  }
 }
 
 #page13 {
